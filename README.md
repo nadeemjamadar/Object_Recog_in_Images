@@ -1,6 +1,7 @@
 # Object Recognition in Images
 -Final Year GTU Project
-A flask based web-app that labels the objects it can identify from either of these:
+
+A flask based web-app which labels the objects that it can identify from either of these:
 
 --> Camera Video stream
 
