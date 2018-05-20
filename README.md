@@ -1,4 +1,4 @@
-#Object Recognition in Images
+# Object Recognition in Images
 -Final Year GTU Project
 A flask based web-app that labels the objects it can identify from either of these:
 
@@ -8,7 +8,7 @@ A flask based web-app that labels the objects it can identify from either of the
 
 --> Whole video [remote or upload-able]
 
-###API Doc
+### API Doc
 
 - Send a post request to:
 [http://localhost:5001/images](http://localhost:5001/image)
