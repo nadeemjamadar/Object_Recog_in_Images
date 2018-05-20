@@ -32,6 +32,11 @@ and rest are json describing each object with following attributes:
 
 [{"name": "Object Recognition in Images REST API", "version": "0.0.1", "numObjects": 2.0, "threshold": 0.4}, {"name": "Object", "class_name": "person", "score": 0.7700180411338806, "y": 0.17950987815856934, "x": 0.0, "height": 1.0, "width": 0.8535020351409912}, {"name": "Object", "class_name": "bottle", "score": 0.7336319088935852, "y": 0.45810097455978394, "x": 0.21297135949134827, "height": 0.8313612341880798, "width": 0.3277725875377655}]
 
+### Starting Web-App:
+- (Optional) Create python environment
+- pip install tensorflow-gpu (also, ensure tf works, after installing CUDA if nvidia)
+- pip install flask
+- python server.py (u can change flask port number from server.py file last line)
 
 ### Resources Used:
 - COCO dataset
