@@ -1,0 +1,63 @@
+<head>
+  <title>Main Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./static/bootstrap.min.css">
+  <script src="./static/jquery.min.js"></script>
+  <script src="./static/popper.min.js"></script>
+  <script src="./static/bootstrap.min.js"></script>
+  <script>
+  function changeUrl(asd){
+  document.getElementById('myIframe').src=asd;
+  document.getElementById('myIframe').classList=asd
+  document.getElementById('t').click()
+  }
+  </script>
+  <style>
+  .local{left:25%;top:10;}
+  .credits{left:1%;top:10;}
+  </style>
+</head>
+<div class="container-fluid">
+	<div class="row"  style="background: orange;">
+		<div class="col-md-12">
+			<h3 class="text-center text-primary">
+				Object Recognition in Images
+			</h3>
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded static-top" style="background: skyblue;">
+				 
+				<button  id='t' class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="navbar-toggler-icon"></span>
+				</button> <a class="navbar-brand" href="#">LDCE IT</a>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							 <a class="nav-link" href="javascript:changeUrl('credits')">Credits <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							 <a class="nav-link" href="javascript:changeUrl('local')">Live Camera <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item active">
+							 <a class="nav-link" href="javascript:changeUrl('imgup')">Upload Image <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							 <a class="nav-link" href="javascript:changeUrl('vidup')">Local Video <span class="sr-only">(current)</span></a>
+						</li><li class="nav-item active">
+							 <a class="nav-link" href="javascript:changeUrl('http://cocodataset.org/#explore')">Coco Classes List<span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" style="-webkit-box-align: center;-webkit-box-pack:center;">
+		
+		<iframe id="myIframe" src="nope" style="position:relative;margin:0; width:100%; height:100%; border:none; overflow:hidden;" xscrolling="no"></iframe>
+		</div>
+	</div>
+</div>
+  <script>
+  changeUrl('credits')
+  </script>
